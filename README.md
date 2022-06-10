@@ -18,6 +18,7 @@ Download the sample ivr server application for the current repository as a zip f
 <p>Create a directory where the PHP software is extracted or installed and make it your working directory.<br>
 $ mkdir myapp <br>
 $ cd myapp <br>
+Add the ivr_menu_eml.php file into myapp directory.
 </p>
 
 Note: <br>
@@ -30,7 +31,7 @@ Note: <br>
 <h3>Application behind NAT (Optional)</h3>
 <p>You can use NGROK (ngrok.com) to expose your local machine to internet. It’s a quick way to test web application from internet. You can let EDP interact with your application running on local machine without really having a public IP or domain name. </p>
 
-<p>Below mentioned steps needs to be executed if your application is running behind NAT. Otherwise jump to section 5.1.4.</p>
+<p>Below mentioned steps needs to be executed if your application is running behind NAT. Otherwise jump to section "Executing the Server Application".</p>
 
 <ul>
 	<li>Download ngrok from https://ngrok.com/download</li>
@@ -65,15 +66,18 @@ The path referred in sample application can be used with NGROK tunnel URL as ill
 | / (no path specified) | https://60bc-27-7-127-107.ngrok.io/               |
 	
 Note:<br>
-You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the index.js i.e. comment out line number 22 and uncomment line number 26. Replace the example ngrok url with your ngrok application tunnel url in line number 26.<br>
+You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the ivr_menu_eml.php, i.e. replace the example ngrok url with your ngrok application tunnel url in line number 15.<br>
 </p>
 ------------------
 
 ### Executing the Server Application
 Execute the server application with the following command from where PHP is installed.
 
-$ php -S <YOUR_PUBLIC_IP>:3000 myapp/index.php
-
+$ php -S <YOUR_PUBLIC_IP>:3000 ivr_menu_eml.php
+	
+<p> Application will receive a HTTP POST request, in response it will send EML Prompt. </p> 
+------------------	
+	
 ### Making a Call
 The following example shows a SIP URI in the "To:" number, which is used for the SIP or WebRTC endpoints. The "To:" number can also be a PSTN number where the "To:" number can be set to “8080808080”.
 
