@@ -1,4 +1,4 @@
-# engage-rest-api-simple-ivr-sample-php
+# engage-eml-ivr-menu-php-app
 This application demonstrates sample IVR server application using an API call and Engage markup language (EML). It also showcases the statuscallback events to the server application.
 
 
