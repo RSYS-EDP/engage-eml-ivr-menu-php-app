@@ -110,9 +110,12 @@ curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
 -----------------
 
 
-NOTE: The apikey and AccID are accessed from the Engage Portal.
-
-Replace the <YourApplicationPublicIp> with the IP address of your server. If you are using the application behind NAT (NGROK), the ‘Url’ and ‘StatusCallback’ parameters are mentioned as below.
+NOTE: 
+<ul>
+<li>The apikey and AccID are obtained from your account in Engage Portal.</li>
+<li>"From" number should be the phone number allocated to your account</li>
+<li>Replace YOUR_PUBLIC_IP with the IP address of your server. If you are using the application behind NAT (NGROK), the ‘Url’ and ‘StatusCallback’ parameters are mentioned as below.</li>
+</ul>
 
 ------------------
 curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
