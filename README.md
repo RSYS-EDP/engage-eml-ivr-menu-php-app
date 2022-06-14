@@ -24,7 +24,7 @@ Add the ivr_menu_eml.php file into myapp directory.
 Note: <br>
 <ul>
 <li>Make sure 3000 port is free, if 3000 port is used by any other application you can change the port</li>
-<li>index.js contains localhost as ip address. If you have public ip replace localhost with your public ip and jump to section "How to run application". If you don’t know the public ip continue with section "Application behind NAT"</li>
+<li>ivr_menu_eml.php contains localhost as ip address. If you have public ip replace localhost with your public ip and jump to section "How to run application". If you don’t know the public ip continue with section "Application behind NAT"</li>
 </ul>
 </p>
 
@@ -70,9 +70,6 @@ The path referred in sample application can be used with NGROK tunnel URL as ill
 
 | Path                  | Public URL (using NGROK)                          |
 |-----------------------|---------------------------------------------------|
-| /eml                  | https://60bc-27-7-127-107.ngrok.io/eml            |
-| /gatherAction         | https://60bc-27-7-127-107.ngrok.io/gatherAction   |
-| /statuscallback       | https://60bc-27-7-127-107.ngrok.io/statuscallback |
 | / (no path specified) | https://60bc-27-7-127-107.ngrok.io/               |
 	
 Note:<br>
