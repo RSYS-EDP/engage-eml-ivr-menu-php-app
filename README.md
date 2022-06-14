@@ -66,10 +66,9 @@ For windows system, follow the below steps
 </p>
 
 <p>
-The https://60bc-27-7-127-107.ngrok.io/ in sample application can be used with NGROK tunnel URL
 	
 Note:<br>
-You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the ivr_menu_eml.php. Replace the example ngrok url with your ngrok application tunnel url in line number 15.<br>
+Modify "$main_menu_url" in ivr_menu_eml.php with your public NGROK url (ex: https://60bc-27-7-127-107.ngrok.io/)<br>
 </p>
 ------------------
 
