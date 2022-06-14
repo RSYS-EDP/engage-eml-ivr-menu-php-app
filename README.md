@@ -56,7 +56,7 @@ Note: <br>
 ![image](https://user-images.githubusercontent.com/105645941/173058143-fcf053a5-274a-4ff1-953f-7b07e1c293b3.png)
 
 
-For windows system, follow the below stepsAuthenticate your ngrok agent by running the command in terminal
+For windows system, follow the below steps
 <ul>
 	<li>Download ngrok from https://ngrok.com/download</li>
 	<li>sign up with ngrok account. Get the authetication key from your account</li>
@@ -68,7 +68,6 @@ For windows system, follow the below stepsAuthenticate your ngrok agent by runni
 <p>
 The path referred in sample application can be used with NGROK tunnel URL as illustrated below. Only https example is listed below but you can use http also likewise.<br>
 
-
 | Path                  | Public URL (using NGROK)                          |
 |-----------------------|---------------------------------------------------|
 | /eml                  | https://60bc-27-7-127-107.ngrok.io/eml            |
@@ -77,7 +76,7 @@ The path referred in sample application can be used with NGROK tunnel URL as ill
 | / (no path specified) | https://60bc-27-7-127-107.ngrok.io/               |
 	
 Note:<br>
-You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the ivr_menu_eml.php, i.e. replace the example ngrok url with your ngrok application tunnel url in line number 15.<br>
+You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the index.js i.e. comment out line number 22 and uncomment line number 26. Replace the example ngrok url with your ngrok application tunnel url in line number 26.<br>
 </p>
 ------------------
 
