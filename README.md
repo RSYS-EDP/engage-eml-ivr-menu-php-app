@@ -4,7 +4,7 @@ This application demonstrates sample IVR server application using an API call an
 
 <h2>Creating the Server Application</h2>
 
-<p>The following section explains about how to create a PHP server application using the "<Gather>, <Say>, <Dial>, and <Hangup>" verbs.</p>
+<p>The following section explains about how to create a PHP server application using the "Gather, Say, Dial, and Hangup" verbs.</p>
 
 
 <h2>Installing the Customer Application</h2>
