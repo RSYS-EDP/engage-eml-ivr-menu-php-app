@@ -76,7 +76,7 @@ The path referred in sample application can be used with NGROK tunnel URL as ill
 | / (no path specified) | https://60bc-27-7-127-107.ngrok.io/               |
 	
 Note:<br>
-You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the index.js i.e. comment out line number 22 and uncomment line number 26. Replace the example ngrok url with your ngrok application tunnel url in line number 26.<br>
+You will have to change the NGROK tunnel URL as per your local setting: Modify gatherAction URL in the ivr_menu_eml.php. Replace the example ngrok url with your ngrok application tunnel url in line number 15.<br>
 </p>
 ------------------
 
@@ -89,7 +89,7 @@ $ php -S <YOUR_PUBLIC_IP>:3000 ivr_menu_eml.php
 ------------------	
 	
 ### Making a Call
-The following example shows a SIP URI in the "To:" number, which is used for the SIP or WebRTC endpoints. The "To:" number can also be a PSTN number where the "To:" number can be set to “8080808080”.
+The following example shows a SIP URI in the "To:" parameter, which is used for the SIP or WebRTC endpoints. The "To:" can also be any PSTN number.
 
 Perform the following steps to make a call using EDP.
 To make a call using the EDP, execute the server application with the following command.
