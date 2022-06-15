@@ -1,5 +1,5 @@
 # engage-eml-ivr-menu-php-app
-This application demonstrates sample IVR server application using an API call and Engage markup language (EML). It also showcases the statuscallback events to the server application.
+This application demonstrates sample IVR server application using an API call and Engage markup language (EML). It also showcases the call transfer to the agent and statuscallback events to the server application.
 
 
 <h2>Creating the Server Application</h2>
@@ -68,7 +68,11 @@ For windows system, follow the below steps
 <p>
 	
 Note:<br>
-Modify "$main_menu_url" in ivr_menu_eml.php with your public NGROK url (ex: https://60bc-27-7-127-107.ngrok.io/)<br>
+<ul>
+<li>Modify "$main_menu_url" in ivr_menu_eml.php with your public NGROK url (ex: https://60bc-27-7-127-107.ngrok.io/)</li>
+<li>To verify the call transfer functionality to agent, you can use a sip or webrtc or a pstn EP. Modify the variables value in line number 21, 23 and 25 in ivr_menu_eml.php as per you registered SIP EP address.</li>
+<li>To use PSTN number for call transfer, modify the line number 31, 33 and 35 in ivr_menu_eml.php and provide routable pstn numbers. Comment out line number 81, 95 and 109 and uncomment line number 83, 97 and 111 in ivr_menu_eml.php</li>
+</ul>
 </p>
 ------------------
 
