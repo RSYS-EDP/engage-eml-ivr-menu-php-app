@@ -90,7 +90,8 @@ The following example shows a SIP URI in the "To:" parameter, which is used for 
 Perform the following steps to make a call using EDP.
 To make a call using the EDP, execute the server application with the following command.
 
------------------
+
+<code>
 curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
 --header 'apikey: <<Your API Key>>' \
 --header 'Content-Type: application/json' \
@@ -103,7 +104,8 @@ curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
 "StatusCallbackMethod":"POST",
 "Type":"voice"
 }'
------------------
+</code>
+
 
 
 NOTE: 
@@ -113,7 +115,8 @@ NOTE:
 <li>Replace YOUR_PUBLIC_IP with the IP address of your server. If you are using the application behind NAT (NGROK), the ‘Url’ and ‘StatusCallback’ parameters are mentioned as below.</li>
 </ul>
 
-------------------
+
+<code>
 curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
 --header 'apikey: <<Your API Key>>' \
 --header 'Content-Type: application/json' \
@@ -126,5 +129,5 @@ curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
 "StatusCallbackMethod":"POST",
 "Type":"voice"
 }'
------------------
+</code>
 
