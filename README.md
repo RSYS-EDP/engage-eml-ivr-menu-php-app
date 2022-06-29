@@ -93,13 +93,13 @@ To make a call using the EDP, execute the server application with the following 
 
 <code>
 curl -k -XPOST https://apigateway.engagedigital.ai/api/v1/accounts/{AccID}/call 
---header 'apikey: <<Your API Key>>' 
+--header 'apikey: API_KEY' 
 --header 'Content-Type: application/json' 
 -d '{
 "From":"6070707112",
-"To":sip:123456787@sipaz1.engageio.com,
-"Url":https://<YOUR_PUBLIC_IP>:3000/eml,
-"StatusCallback": https://<YOUR_PUBLIC_IP>:3000/statuscallback,
+"To":"sip:123456787@sipaz1.engageio.com",
+"Url":"https://YOUR_PUBLIC_IP:3000/eml",
+"StatusCallback": "https://YOUR_PUBLIC_IP:3000/statuscallback",
 "StatusCallbackEvent":"initiated,ringing,answered,completed",
 "StatusCallbackMethod":"POST",
 "Type":"voice"
@@ -118,13 +118,13 @@ NOTE:
 
 <code>
 curl -k -XPOST https://apigateway.engagedigital.ai/api/v1/accounts/{AccID}/call 
---header 'apikey: <<Your API Key>>' 
+--header 'apikey: API_KEY' 
 --header 'Content-Type: application/json' 
 -d '{
 "From":"6070707112",
-"To":sip:123456787@sipaz1.engageio.com,
-"Url":https://60bc-27-7-127-107.ngrok.io/eml,
-"StatusCallback": https://60bc-27-7-127-107.ngrok.io/statuscallback,
+"To":"sip:123456787@sipaz1.engageio.com",
+"Url":"https://60bc-27-7-127-107.ngrok.io/eml",
+"StatusCallback": "https://60bc-27-7-127-107.ngrok.io/statuscallback",
 "StatusCallbackEvent":"initiated,ringing,answered,completed",
 "StatusCallbackMethod":"POST",
 "Type":"voice"
