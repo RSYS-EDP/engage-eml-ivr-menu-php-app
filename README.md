@@ -92,10 +92,10 @@ To make a call using the EDP, execute the server application with the following 
 
 
 <code>
-curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
---header 'apikey: <<Your API Key>>' \
---header 'Content-Type: application/json' \
---d '{
+curl -k -XPOST https://apigateway.engagedigital.ai/api/v1/accounts/{AccID}/call 
+--header 'apikey: <<Your API Key>>' 
+--header 'Content-Type: application/json' 
+-d '{
 "From":"6070707112",
 "To":sip:123456787@sipaz1.engageio.com,
 "Url":https://<YOUR_PUBLIC_IP>:3000/eml,
@@ -117,10 +117,10 @@ NOTE:
 
 
 <code>
-curl -k -XPOST https://<<base URL>>/api/v1/accounts/{AccID}/call \
---header 'apikey: <<Your API Key>>' \
---header 'Content-Type: application/json' \
---d '{
+curl -k -XPOST https://apigateway.engagedigital.ai/api/v1/accounts/{AccID}/call 
+--header 'apikey: <<Your API Key>>' 
+--header 'Content-Type: application/json' 
+-d '{
 "From":"6070707112",
 "To":sip:123456787@sipaz1.engageio.com,
 "Url":https://60bc-27-7-127-107.ngrok.io/eml,
